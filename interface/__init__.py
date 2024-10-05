@@ -12,9 +12,11 @@ def show_interface():
     dpg.create_viewport(
         title="WhiteRoom", min_height=VIEWPORT_MIN_HEIGHT, min_width=VIEWPORT_MIN_WIDTH
     )
-    dpg.set_global_font_scale(1.25)
+    # dpg.set_global_font_scale(1.25)
 
     file_path: str | None = None
+    texture_registry = dpg.add_texture_registry()
+    texture_registry.
 
     with dpg.window(tag="window-home"):
 
@@ -24,6 +26,7 @@ def show_interface():
                 initialdir=initial_dir, title="Select a File"
             )
             width, height, channels, data = dpg.load_image(file_path)
+            dpg.text
             dpg.add_static_texture(
                 width=width, height=height, default_value=data, tag="texture_tag"
             )
