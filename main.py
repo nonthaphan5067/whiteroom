@@ -1,4 +1,5 @@
-from interface import show_interface
+from interface import show
 
 if __name__ == "__main__":
-    show_interface()
+    print("Run main program.")
+    show()
