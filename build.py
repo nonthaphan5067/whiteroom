@@ -1,4 +1,3 @@
-import os
 import PyInstaller.__main__
 import shutil
 
